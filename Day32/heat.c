@@ -3,8 +3,8 @@
 #include <time.h>
 
 int main() {
-    int start_day = 23;
-    int end_day = 31;
+    int start_day = 10;
+    int end_day = 22;
 
     srand(time(NULL));
 
@@ -17,7 +17,7 @@ int main() {
             int minute = rand() % 60;
 
             char date[50];
-            sprintf(date, "2026-01-%02dT%02d:%02d:00", day, hour, minute);
+            sprintf(date, "2025-12-%02dT%02d:%02d:00", day, hour, minute);
 
             // File update (IMPORTANT)
             FILE *fp = fopen("activity.txt", "a");
