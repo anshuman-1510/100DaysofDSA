@@ -16,10 +16,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Calculate total sum from 1 to n
     int totalSum = n * (n + 1) / 2;
 
-    // Calculate array sum
     int arrSum = 0;
     for (int i = 0; i < n - 1; i++) {
         arrSum += arr[i];
